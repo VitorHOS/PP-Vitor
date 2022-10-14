@@ -1,0 +1,7 @@
+#includ <stdio.h>
+int main (){
+int N
+scanf(%d,&N);
+printf("o número é:");
+return 0
+}
