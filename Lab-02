@@ -127,3 +127,120 @@ int main()
 }
 
 Exercício 11
+#include<stdio.h> 
+
+int main()
+{
+    float K,M;
+    printf("digete uma velocidade em m/s:");
+    scanf("%f",&M);
+    K = M*3.6;
+    printf("%f m/s e %f km/h",M,K);
+    return 0;
+} 
+
+Exercício 12
+#include<stdio.h> 
+
+int main()
+{
+    float K,M;
+    printf("digete uma distância em milhas:");
+    scanf("%f",&M);
+    K = 1.61*M;
+    printf("%f milhas corresponde a %f quilômetros",M,K);
+    return 0;
+} 
+
+Exercício 13
+#include<stdio.h> 
+
+int main()
+{
+    float K,M;
+    printf("digete uma distância em quilômetros:");
+    scanf("%f",&K);
+    M = K/1.61;
+    printf("%f quilômetros corresponde a %f milhas",K,M);
+    return 0;
+} 
+
+Exercício 14
+#include<stdio.h> 
+
+int main()
+{
+    const float pi=3.141592;
+    float G,R;
+    printf("digite um angulo em graus:");
+    scanf("%f",&G);
+    R = G*pi/180;
+    printf("%f graus em radianos e %f",G,R);
+    return 0;
+} 
+
+Exercício 15
+#include<stdio.h> 
+
+int main()
+{
+    const float pi=3.141592;
+    float G,R;
+    printf("digite um angulo em radianos:");
+    scanf("%f",&R);
+    G = R*180/pi;
+    printf("%f radianos em graus e %f",R,G);
+    return 0;
+} 
+
+Exercício 16
+#include<stdio.h> 
+
+int main()
+{
+    float P,C;
+    printf("digite um comprimento em polegadas:");
+    scanf("%f",&P);
+    C = P*2.54;
+    printf("%f polegadas sao %f centímetros",P,C);
+    return 0;
+} 
+
+Exercício 17
+#include<stdio.h> 
+
+int main()
+{
+    float P,C;
+    printf("digite um comprimento em centimetros:");
+    scanf("%f",&C);
+    P = C/2.54;
+    printf("%f centimetros sao %f polegadas",C,P);
+    return 0;
+} 
+
+Exercício 18
+#include<stdio.h> 
+
+int main()
+{
+    float L,M;
+    printf("digite um volume em metros cubicos:");
+    scanf("%f",&M);
+    L = 1000*M;
+    printf("%f metros cúbicos são %f litros",M,L);
+    return 0;
+} 
+
+Exercício 19
+#include<stdio.h> 
+
+int main()
+{
+    float L,M;
+    printf("digite um volume em litros:");
+    scanf("%f",&L);
+    M = L /1000;
+    printf("%f litros sao %f metros cúbicos",L,M);
+    return 0;
+}
