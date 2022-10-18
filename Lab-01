@@ -1,7 +1,11 @@
-#includ <stdio.h>
-int main (){
-int N
-scanf(%d,&N);
-printf("o número é:");
-return 0
+#include<stdio.h> 
+
+int main()
+{
+    int n1;
+    printf("Digite um numero:");
+    scanf("%i",&n1);
+    printf("o numero e: %i",n1);
+    return 0;
 }
+
