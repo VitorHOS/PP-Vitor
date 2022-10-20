@@ -244,3 +244,176 @@ int main()
     printf("%f litros sao %f metros cúbicos",L,M);
     return 0;
 }
+
+Exercício 20
+#include<stdio.h> 
+
+int main()
+{
+    float k,l;
+    printf("digite um peso em quilogramas");
+    scanf("%f",&k);
+    l=k/0.45;
+    printf("%f quilogramas são %f libras",k,l);
+    return 0;
+} 
+
+Exercício 21
+#include<stdio.h> 
+
+int main()
+{
+    float K,L;
+    printf("digite um peso em libras");
+    scanf("%f",&L);
+     K = L*0.45;
+    printf("%f libras são %f quilogramas ",L,K);
+    return 0;
+} 
+
+Exercício 22
+#include<stdio.h> 
+
+int main()
+{
+    float J,M;
+    printf("digite um comprimento em jardas:");
+    scanf("%f",&J);
+    M = 0.91*J;
+    printf("%f jardas são %f metros ",J,M);
+    return 0;
+} 
+
+Exercício 23
+#include<stdio.h> 
+
+int main()
+{
+    float J,M;
+    printf("digite um comprimento em metros:");
+    scanf("%f",&M);
+    J = M/0.91;
+    printf("%f metros são %f jardas ",M,J);
+    return 0;
+} 
+
+Exercício 24
+#include<stdio.h> 
+
+int main()
+{
+    float A,M;
+    printf("digite uma área em metros quadrados:");
+    scanf("%f",&M);
+    A = M*0.000247;
+    printf("%f m2 são %f acres ",M,A);
+    return 0;
+} 
+
+Exercício 25
+#include<stdio.h> 
+
+int main()
+{
+    float A,M;
+    printf("digite uma área em acres:");
+    scanf("%f",&A);
+    M = A*4048.58;
+    printf("%f acres são %f m2 ",A,M);
+    return 0;
+} 
+
+Exercício 26
+#include<stdio.h> 
+
+int main()
+{
+    float H,M;
+    printf("digite uma área em metros quadrados:");
+    scanf("%f",&M);
+    H = M*0.0001;
+    printf("%f m2 são %f hectares ",M,H);
+    return 0;
+} 
+
+Exercício 27
+#include<stdio.h> 
+
+int main()
+{
+    float H,M;
+    printf("digite uma área em hectares:");
+    scanf("%f",&H);
+    M = H*10000;
+    printf("%f hectares são %f m2",H,M);
+    return 0;
+} 
+
+Exercício 28
+#include<stdio.h>
+#include<stdlib.h> 
+
+int main()
+{
+    int n1,n2,n3,sq;
+    printf("digite um numeros:");
+    scanf("%i",&n1);
+    printf("digite outro numeros:");
+    scanf("%i",&n2);
+    printf("digite outro numeros:");
+    scanf("%i",&n3);
+    n1*=n1;
+    n2*=n2;
+    n3*=n3;
+    sq=n1+n2+n3;
+    printf("a soma dos quadrados dos 3 números e %i",sq);
+    return 0;
+} 
+
+Exercício 29
+#include<stdio.h> 
+
+int main()
+{
+    float nota1,nota2,nota3,nota4,media;
+    printf("digite a primeira nota:");
+    scanf("%f",&nota1);
+    printf("digite a segunda nota:");
+    scanf("%f",&nota2);
+    printf("digite a terceiranota:");
+    scanf("%f",&nota3);
+    printf("digite a quarta nota:");
+    scanf("%f",&nota4);
+    media=(nota1+nota2+nota3+nota4)/4;
+    printf("a media das notas e %f",media);
+    return 0;
+} 
+
+Exercício 30
+#include<stdio.h> 
+
+int main()
+{
+    float real,dolar,cota;
+    printf("digite o valor em real para conversão:");
+    scanf("%f",&real);
+    printf("digite a cotação do dólar hoje:");
+    scanf("%f",&cota);
+    dolar=real/cota;
+    printf("%f reais em dólares é %f dólares",real,dolar);
+    return 0;
+} 
+
+Exercício 31
+#include<stdio.h> 
+
+int main()
+{
+    int x,suc,ant;
+    printf("digite um numero inteiro");
+    scanf("%i",&x);
+    ant=x-1;
+    suc=x+1;
+    printf(" o antecessor e %i \n o sucessor e %i",ant,suc);
+    return 0;
+}
