@@ -417,3 +417,131 @@ int main()
     printf(" o antecessor e %i \n o sucessor e %i",ant,suc);
     return 0;
 }
+
+Exercício 32
+#include<stdio.h> 
+
+int main()
+{
+    int x,st,ad,s;
+    printf("digite um numero inteiro");
+    scanf("%i",&x);
+    st=x*3+1;
+    ad=x*2-1;
+    s=st+ad;
+    printf("a soma do sucessor do seu triplo com o antecessor do seu dobro e %i",s);
+    return 0;
+} 
+
+Exercício 33
+#include<stdio.h> 
+
+int main()
+{
+    float A,lado;
+    printf("digite o tamanho do lado do quadrado");
+    scanf("%f",&lado);
+    A=lado*lado;
+    printf("a área do quadrado é %f",A);
+    return 0;
+} 
+
+Exercício 34
+#include<stdio.h> 
+
+int main()
+{
+    const float pi=3.141592;
+    float raio,area;
+    printf("Digite o raio do circulo:");
+    scanf("%f",&raio);
+    area=pi*raio;
+    printf("a area de um círculo de raio = %f e %f",raio,area);
+    return 0;
+} 
+
+Exercício 35
+#include<stdio.h>
+#include<math.h> 
+
+int main()
+{
+    float a,b,hipotenusa;
+    printf("digite um valor para a:");
+    scanf("%f",&a);
+    printf("digite um valor para b:");
+    scanf("%f",&b);
+    hipotenusa= sqrt(a*a+b*b);
+    printf("a hipotenusa é %f",hipotenusa);
+    
+    return 0;
+} 
+
+Exercício 36
+#include<stdio.h> 
+
+int main()
+{
+    const float pi=3.141592;
+    float raio,altura,volume;
+    printf("Digite o raio do cilindro:");
+    scanf("%f",&raio);
+    printf("digite a altura do cilindro ");
+    scanf("%f",&altura);
+    volume = pi * raio * altura;
+    printf("o volume é %f",volume);
+    return 0;
+} 
+
+Exercício 37
+#include<stdio.h> 
+
+int main()
+{
+    float precoi,precod;
+    printf("digite o preço do produto:");
+    scanf("%f",&precoi);
+    precod=precoi*0.88;
+    printf("com o desconto o produto ficará %f",precod);
+    return 0;
+} 
+
+Exercício 38
+#include<stdio.h> 
+
+int main()
+{
+    float salarioi,salariof;
+    printf("digite o seu salário:");
+    scanf("%f",&salarioi);
+    salariof=salarioi*1.25;
+    printf("seu novo salário será %f",salariof);
+    return 0;
+} 
+
+Exercício 39
+#include<stdio.h> 
+
+int main()
+{
+    float g1,g2,g3,x=780000;
+    g1=x*0.46;
+    g2=x*0.32;
+    g3=x*0.22;
+    printf("o primeiro ganhará %f \no segundo ganhará %f\no terceiro ganhará %f",g1,g2,g3);
+    return 0;
+} 
+
+Exercício 40
+#include<stdio.h> 
+
+int main()
+{
+    float dias,pagamento,x,ir=0.92;
+    printf("Digite quantos dias trabalhou:");
+    scanf("%f",&dias);
+    x=dias*30;
+    pagamento=x*ir;
+    printf("você receberá %f.",pagamento);
+    return 0;
+}
