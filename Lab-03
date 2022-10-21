@@ -1,1 +1,170 @@
+exercicio 1
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n1,n2;
+    printf("digite dois numero:");
+    scanf("%i %i",&n1,&n2);
+   if (n1>n2){
+    printf("%i e maior que %i",n1,n2);
+   }else {
+   printf("%i e maior que %i",n2,n1);
+   }
+    return 0;
+}
+exercicio 2
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n,r;
+    printf("digite um numero:");
+    scanf("%i",&n);
+    if (n>0){
+    r= sqrt(n);
+    printf("a raiz quadrada de %i e %i",n,r);
+    }else{
+    printf("numero invalido");
+    }
+
+    return 0;
+}
+exercicio 3
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float n,r,q;
+    printf("digite um numero:");
+    scanf("%f",&n);
+    if (n>0){
+        r= sqrt(n);;
+        printf("a raiz quadrada de %f e %f",n,r);
+    }else {
+    q=n*n;
+    printf("o quadrado de %f e %f",n,q);
+    }
+
+
+    return 0;
+}
+exercicio 4
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float n,r,q;
+    printf("digite um numero:");
+    scanf("%f",&n);
+    if (n>0){
+        r= sqrt(n);
+        q=n*n;
+        printf("a raiz quadrada de %f e %f\n",n,r);
+        printf("o quadrado de %f e %f",n,q);
+    }
+    return 0;
+}
+exercicio 5
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n,r;
+    printf("digite um numero:");
+    scanf("%i",&n);
+    r=n%2;
+    if (r==0){
+    printf("o numero e par");
+    }else {
+    printf("o numero e impar");
+    }
+
+
+    return 0;
+}
+exercicio 6
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n1,n2,d;
+    printf("digite dois numeros:");
+    scanf("%i %i",&n1,&n2);
+    if (n1>n2){
+        d=n1-n2;
+        printf("%i e maior que %i e a diferenca entre eles e %i",n1,n2,d);
+    }else {
+    d=n2-n1;
+    printf("%i e maior que %i e a diferenca entre eles e %i",n2,n1,d);
+    }
+    return 0;
+}
+exercicio 7
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n1,n2;
+    printf("digite dois numeros:");
+    scanf("%i %i",&n1,&n2);
+    if (n1>n2){
+        printf("o maior que %i",n1);
+    }
+    if (n2>n1) {
+    printf("o maior que e %i",n2);
+    }
+    if (n1==n2){
+        printf("os numeros sao iguais");
+    }
+    return 0;
+}
+exercicio 8
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float nota1,nota2,media;
+    printf("digite duas notas:");
+    scanf("%f %f",&nota1,&nota2);
+    if (nota1>=0.0 && nota1<=10.0 && nota2>=0.0 && nota2<=10.0){
+    media=(nota1+nota2)/2;
+    printf("a media das notas e %f",media);
+    } else {
+    printf("as notas sao invalidas.");
+    }
+
+
+    return 0;
+}
+
+exercicio 9
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float salario,emprestimo,p;
+    printf("digite o salario:");
+    scanf("%f",&salario);
+    printf("digite o valor da prestacao do emprestimo:");
+    scanf("%f",&emprestimo);
+    p=salario/5;
+    if (emprestimo>p){
+       printf("emprestimo nao concedido");
+    } else {
+    printf("emprestimo comcedido");
+    }
+    return 0;
+}
+
+exercicio 10
 
