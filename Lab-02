@@ -545,3 +545,216 @@ int main()
     printf("você receberá %f.",pagamento);
     return 0;
 }
+
+Exercício 41
+#include<stdio.h> 
+
+int main()
+{
+    float hora,dias,x;
+    printf("digite o valor da sua hora de trabalho: ");
+    scanf("%f",&hora);
+    printf("Digite sua horas trabalhadas no mês:");
+    scanf("%f",&dias);
+    x=hora*dias*1.10;
+    printf("seu salário será %f",x);
+    return 0;
+} 
+
+Exercício 42
+#include<stdio.h> 
+
+int main()
+{
+    float sb,sf,x,y;
+    printf("digite seu salário base:");
+    scanf("%f",&sb);
+    x=sb*1.05;
+    y=sb*0.07;
+    sf=x-y;
+    printf("seu salário com descontos e bônus ficará %f",sf);
+    return 0;
+} 
+
+Exercício 43
+#include<stdio.h> 
+
+int main()
+{
+    float vp,vd,v3x,cd,c3x;
+    printf("digite o valor:");
+    scanf("%f",&vp);
+    vd=vp*0.9;
+    v3x=vp/3;
+    cd=vd*0.05;
+    c3x=vp*0.05;
+    printf("o valor com desconto será %f\n",vd);
+    printf("o valor da parcelas em 3x será %f\n",v3x);
+    printf("sua comissão na venda com desconto será %f\n",cd);
+    printf("sua comissão na venda em 3x será %f\n",c3x);
+    
+    return 0;
+} 
+
+Exercício 44
+#include<stdio.h> 
+
+int main()
+{
+    int altura,alturad,degraus;
+    printf("qual altura dos degraus em centimetros:");
+    scanf("%i",&alturad);
+    printf("qual altura do local a ser subido em centimetros:");
+    scanf("%i",&altura);
+    degraus=altura/alturad;
+    printf("sera necessário %i degraus",degraus);
+    return 0;
+} 
+
+Exercício 45
+#include<stdio.h> 
+
+int main()
+{
+    char x;
+    printf("Digite uma letra maiuscula:");
+    scanf("%c",&x);
+    printf("convertida em minuscula:%c",x +32);
+    return 0;
+} 
+
+Exercício 46
+#include<stdio.h> 
+
+int main()
+{
+    int x,y,z,n1,nc;
+    printf("Digite um numero inteiro de 3 digitos:");
+    scanf("%i",&n1);
+    x=n1/100;
+    y=(n1%100)/10;
+    z=n1%10;
+    nc=z*100+y*10+x;
+    printf("o contrário de %i é %i",n1,nc);
+    return 0;
+} 
+
+Exercício 47
+#include<stdio.h> 
+
+int main()
+{
+    int w,x,y,z,n1;
+    printf("Digite um numero inteiro de 4 digitos:");
+    scanf("%i",&n1);
+    w=n1/1000;
+    x=(n1%1000)/100;
+    y=(n1%1000%100)/10;
+    z=n1%1000%100%10;
+    printf("%i\n%i\n%i\n%i",w,x,y,z);
+    return 0;
+} 
+
+Exercício 48
+#include<stdio.h> 
+
+int main()
+{
+    int st,s,m,h;
+    printf("Digite um tempo em segundos:");
+    scanf("%i",&st);
+    m=st/60;
+    s=st%60;
+    h=m/60;
+    m=m%60;
+    printf("%i segundos corresponde a %i horas %i minutos e %i segundos.",st,h,m,s);
+    return 0;
+} 
+
+Exercício 49
+#include<stdio.h> 
+
+int main()
+{
+    int Si,Mi,Hi,Sf,Mf,Hf,d,h,m,s;
+    printf("Digite o horário do começo do experimento:\n");
+    printf("hora:");
+    scanf("%i",&Hi);
+    printf("minuto:");
+    scanf("%i",&Mi);
+    printf("segundos:");
+    scanf("%i",&Si);
+    printf("Digite a duração do experimento em segundos");
+    scanf("%i",&d);
+    m=d/60;
+    s=d%60;
+    h=m/60;
+    m=m%60;
+    Hf=Hi+h;
+    Mf=Mi+m;
+    Sf=Si+s;
+    printf("o experimento acabou as %i horas %i minutos e %i segundos",Hf,Mf,Sf);
+    
+    return 0;
+} 
+
+Exercício 50
+#include<stdio.h> 
+
+int main()
+{
+    int x,y,z;
+    printf("Digite sua idade:");
+    scanf("%i",&y);
+    printf("digite o ano atual:");
+    scanf("%i",&z);
+    x=z-y;
+    printf("voce nasceu em %i",x);
+    return 0;
+} 
+
+Exercício 51 
+
+
+Exercício 52
+#include<stdio.h> 
+
+int main()
+{
+    float vi1,vi2,vi3,vti,g1,g2,g3,vp,x;
+    printf("Digite quanto cada um investiu\n");
+    printf("investidor1:");
+    scanf("%f",&vi1);
+    printf("investidor2:");
+    scanf("%f",&vi2);
+    printf("investidor3:");
+    scanf("%f",&vi3);
+    printf("digite o valor do premio:");
+    scanf("%f",&vp);
+    vti=vi1+vi2+vi3;
+    x=vp/vti;
+    g1=x*vi1;
+    g2=x*vi2;
+    g3=x*vi3;
+    printf("o ganho do primeiro investidor é %f\ndo segundo e %f\ndo terceiro e %f ",g1,g2,g3);
+    
+    return 0;
+} 
+
+Exercício 53
+#include<stdio.h> 
+
+int main()
+{
+    float c,l,p,d;
+    printf("Digite o comprimento do terreno em metros:");
+    scanf("%f",&c);
+    printf("digite a largura do terreno em metros:");
+    scanf("%f",&l);
+    printf("digite o preço do metro da tela:");
+    scanf("%f",&p);
+    d=c*l;
+    p=p*d;
+    printf("o preço da tela em um terreno d dimensão %f e %f",d,p);
+    return 0;
+}
