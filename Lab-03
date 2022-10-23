@@ -167,4 +167,25 @@ int main()
 }
 
 exercicio 10
+#include<stdio.h>
 
+int main()
+{
+    float altura,pesoI;
+    char sexo;
+    printf("digete seu sexo em M ou F:");
+    scanf("%c",&sexo);
+    printf("Digite sua altura em metros:");
+    scanf("%f",&altura);
+    
+    if(sexo=='M') {
+        pesoI=altura*72.7-58;
+        printf("seu peso ideal e %f",pesoI);
+    }
+    if(sexo=='F') {
+        pesoI=altura*62.1-44.7;
+        printf("peso ideal feminino %f",pesoI);
+    }
+    return 0;
+}
+Exercício 11
