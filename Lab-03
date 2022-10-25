@@ -173,11 +173,10 @@ int main()
 {
     float altura,pesoI;
     char sexo;
-    printf("digete seu sexo em M ou F:");
-    scanf("%c",&sexo);
     printf("Digite sua altura em metros:");
     scanf("%f",&altura);
-    
+    printf("digete seu sexo em M ou F:");
+    scanf(" %c",&sexo);
     if(sexo=='M') {
         pesoI=altura*72.7-58;
         printf("seu peso ideal e %f",pesoI);
