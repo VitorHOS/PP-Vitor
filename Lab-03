@@ -187,7 +187,7 @@ int main()
     }
     return 0;
 }
-Exercício 11
+exercício 11
 #include<stdio.h>
 
 int main()
@@ -209,4 +209,23 @@ int main()
     return 0;
 }
 
-Exercício 12
+exercício 12
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int x,l;
+    printf("Digite um numero:");
+    scanf("%i",&x);
+    if (x>0) {
+    l=log10(x);
+    printf("o logaritmo de %i na base 10 e %i",x,l);
+    } else {
+    printf("numero invalido");
+    }
+
+
+    return 0;
+}
+
+exercício 13
