@@ -229,3 +229,23 @@ int main()
 }
 
 exercício 13
+#include<stdio.h>
+
+int main()
+{
+   float n1,n2,n3,nt;
+    printf("Digite a primeira nota:");
+    scanf("%f",&n1);
+    printf("Digite a segunda nota:");
+    scanf("%f",&n2);
+    printf("Digite a terceira nota(peso2):");
+    scanf("%f",&n3);
+    nt=(n1+n2+n3+n3)/4;
+    if(nt>=60){
+    printf("você passou com %f",nt);
+    } else {
+    printf("voce não passou.");
+    }
+    return 0;
+}
+exercício 14
