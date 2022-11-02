@@ -334,3 +334,50 @@ int main()
     return 0;
 }
 exercício 18
+#include<stdio.h>
+
+int main()
+{
+    float n1,n2,res;
+    int opcao;
+   
+    printf("1-Adicao.\n");
+    printf("2-Subtracao\n");
+    printf("3-Multiplicacao\n");
+    printf("4-Divisao\n");
+    printf("escreva o número correspondente a opção desejada:");
+    scanf("%i",&opcao);
+    if(opcao==1){
+    printf("Digite o primeiro número:");
+    scanf("%f",&n1);
+    printf("Digite o segundo numero:");
+    scanf("%f",&n2);
+    res=n1+n2;
+    printf("%f",res); }
+    if(opcao==2){
+    printf("Digite o primeiro número:");
+    scanf("%f",&n1);
+    printf("Digite o segundo numero:");
+    scanf("%f",&n2);
+    res=n1-n2;
+    printf("%f",res); }
+    if(opcao==3){
+    printf("Digite o primeiro número:");
+    scanf("%f",&n1);
+    printf("Digite o segundo numero:");
+    scanf("%f",&n2);
+    res=n1*n2;
+    printf("%f",res); }
+    if(opcao==4){
+    printf("Digite o primeiro número:");
+    scanf("%f",&n1);
+    printf("Digite o segundo numero:");
+    scanf("%f",&n2);
+    res=n1/n2;
+    printf("%f",res); }
+    else {
+    printf("opcao invalida"); }
+    
+    return 0;
+}
+exercício 19
