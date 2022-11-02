@@ -420,4 +420,53 @@ int main()
     return 0;
 }
 exercício 21
+#include<stdio.h>
+
+int main()
+{
+    int opcao;
+    float n1,n2,res;
+    printf("Escolha a opção:\n1- Soma de 2 números.\n2- Diferença entre 2 números (maior pelo menor).\n3- Produto entre 2 números.\n4- Divisão entre 2 números (o denominador não pode ser zero).\n");
+    printf("digite o numero da opcao:");
+    scanf("%i",&opcao);
+    if(opcao==1){
+    printf("Digite o primeiro numero:");
+    scanf("%f",&n1);
+    printf("Digite o segundo numero:");
+    scanf("%f",&n2);
+    res=n1+n2;
+    printf("%f",res);}
+    if(opcao==2){
+    printf("Digite o primeiro numero:");
+    scanf("%f",&n1);
+    printf("Digite o segundo numero:");
+    scanf("%f",&n2);
+    if(n1>n2){
+    res=n1-n2;
+    printf("%f",res);
+    }else{
+    res=n2-n1;
+    printf("%f",res); } }
+    if(opcao==3){
+    printf("Digite o primeiro numero:");
+    scanf("%f",&n1);
+    printf("Digite o segundo numero:");
+    scanf("%f",&n2);
+    res=n1*n2;
+    printf("%f",res);}
+    if(opcao==4){
+    printf("Digite o numerador:");
+    scanf("%f",&n1);
+    printf("Digite o denominador:");
+    scanf("%f",&n2);
+    if(n2==0)
+    printf("denominador invalido");
+    else{
+    res=n1/n2;
+    printf("%f",res);}}
+    
+    return 0;
+}
+
+exercício 22
 
