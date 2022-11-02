@@ -397,3 +397,27 @@ int main()
     return 0;
 }
 exercício 20
+#include<stdio.h>
+
+int main()
+{
+    float a,b,c;
+    printf("Digite um valor para a:");
+    scanf("%f",&a);
+    printf("Digite um valor para b:");
+    scanf("%f",&b);
+    printf("Digite um valor para c:");
+    scanf("%f",&c);
+    if((a+b>c)&&(a+c>b)&&(b+c>a)){
+    if((a==b)&&(b==c))
+    printf("é um triângulo equilatero");
+    if((a==b)&&(a!=c)||(a==c)&&(a!=b)||(b==c)&&(b!=a))
+    printf("o triangulo e isoceles");
+    if((a!=b)&&(b!=c))
+    printf("o trianguloe escaleno");
+    }else{
+    printf("nao pode ser um triângulo"); }
+    return 0;
+}
+exercício 21
+
