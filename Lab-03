@@ -314,5 +314,23 @@ int main()
     return 0;
 }
 exercício 17
+#include<stdio.h>
 
+int main()
+{
+    float Bma,Bme,altura,area;
+    printf("digite o valor da base maior:");
+    scanf("%f",&Bma);
+    printf("Digite o valor da base menor:");
+    scanf("%f",&Bme);
+    printf("digite a altura:");
+    scanf("%f",&altura);
+    if((Bma>0)&&(Bme>0)&&(altura>0)){
+    area=(Bma+Bme)*altura/2;
+    printf("a área do trapézio e %f",area);
+    }else{
+    printf("você digitou algum valor invalido");
+    }
+    return 0;
+}
 exercício 18
