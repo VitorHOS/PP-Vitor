@@ -503,4 +503,31 @@ int main()
     return 0;
 }
 exercício 24
+#include<stdio.h>
+
+int main()
+{
+    int estado;
+    float valorI,valorF;
+    printf("Digite o valor do produto:");
+    scanf("%f",&valorI);
+    printf("1-Minas Gerais\n2-Sao Paulo\n3-Rio de Janeiro\n4-Mato Grosso do Sul\nDigite o numero do estado:");
+    scanf("%i",&estado);
+    if(estado==1){
+    valorF=valorI*1.07;
+    printf("o preço em MG será %f ",valorF);}
+    if(estado==2){
+    valorF=valorI*1.12;
+    printf("o preço em SP será %f",valorF);}
+    if(estado==3){
+    valorF=valorI*1.15;
+    printf("o valor no RJ será %f",valorF);}
+    if(estado==4){
+    valorF=valorI*1.08;
+    printf("o valor no MS será %f",valorF); }
+    else
+    printf("estado invalido");
+    return 0;
+}
+exercício 25
 
