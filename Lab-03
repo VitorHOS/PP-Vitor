@@ -249,3 +249,25 @@ int main()
     return 0;
 }
 exercício 14
+#include<stdio.h>
+
+int main()
+{
+   float n1,n2,n3,media;
+    printf("Digite a nota do trabalho:");
+    scanf("%f",&n1);
+    printf("Digite a nota da avaliação semestral:");
+    scanf("%f",&n2);
+    printf("Digite a nota do exame final:");
+    scanf("%f",&n3);
+    media=(n1*2+n2*3+n3*5)/10;
+    if(media<3)
+    printf("você reprovou.");
+    if((media>=3)&&(media<5))
+    printf("voce está de recuperação.");
+    if(media>=5)
+    printf("você passou.");
+    
+    return 0;
+}
+exercício 15
