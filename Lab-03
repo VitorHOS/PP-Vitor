@@ -469,4 +469,24 @@ int main()
 }
 
 exercício 22
+#include<stdio.h>
+
+int main()
+{
+    int idade,tempo;
+    printf("Digite sua idade:");
+    scanf("%i",&idade);
+    printf("Digite seus anos trabalhados:");
+    scanf("%i",&tempo);
+    if((idade>=60)&&(tempo>=25))
+    printf("você pode se aposentar.");
+    if((idade>=65)&&(tempo<25))
+    printf("você pode se aposentar.");
+    if((tempo>=30)&&(idade<65))
+    printf("você pode se aposentar.");
+    if((tempo<25)||(idade<65))
+    printf("você não pode se aposentar.");
+    return 0;
+}
+exercício 23
 
