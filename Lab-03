@@ -600,5 +600,44 @@ int main()
     return 0;
 }
 exercício 28
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    int opcao;
+    float media,denominador,n1,n2,n3;
+    printf("1-Geometrica\n");
+    printf("2-Ponderada\n");
+    printf("3-Harmonica\n");
+    printf("4-Aritimetica\n");
+    printf("escolha uma das opções acima:");
+    scanf("%i",&opcao);
+    printf("digite o primeiro numero:");
+    scanf("%f",&n1);
+    printf("digite o segundo numero:");
+    scanf("%f",&n2);
+    printf("digite o terceiro numero:");
+    scanf("%f",&n3);
+    if(opcao==1) {
+        media=cbrt(n1*n2*n3);
+        printf("%f",media);
+    }
+    if(opcao==2) {
+        media=(n1+(n2*2)+(n3*3))/3;
+        printf("%f",media);
+    }
+    if(opcao==3) {
+        denominador=(1/n1)+(1/n2)+(1/n3);
+        media=1/denominador;
+        printf("%f",media);
+    }
+    if(opcao==4) {
+        media=(n1+n2+n3)/3;
+        printf("%f",media);
+    }
+    return 0;
+}
+exercício 29
 
 
