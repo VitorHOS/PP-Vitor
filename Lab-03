@@ -913,5 +913,40 @@ int main()
     return 0;
 }
 exercício 36
+#include<stdio.h>
+
+int main()
+{
+    float valor,comissao;
+    printf("Digite o valor da venda:");
+    scanf("%f",&valor);
+    if(valor>=100000) {
+        comissao=valor*0.16+700;
+        printf("sua comissão será R$%f",comissao);
+    }
+    if((valor<100000)&&(valor>=80000)) {
+        comissao=valor*0.14+650;
+        printf("sua comissão será R$%f",comissao);
+    }
+    if((valor<80000)&&(valor>=60000)) {
+        comissao=valor*0.14+600;
+        printf("sua comissão será R$%f",comissao);
+    }
+    if((valor<60000)&&(valor>=40000)) {
+        comissao=valor*0.14+550;
+        printf("sua comissão será R$%f",comissao);
+    }
+    if((valor<40000)&&(valor>=20000)) {
+        comissao=valor*0.14+500;
+        printf("sua comissão será R$%f",comissao);
+    }
+    if(valor<20000) {
+        comissao=valor*0.14+400;
+        printf("sua comissão será R$%f",comissao);
+    }
+
+    return 0;
+}
+exercício 37
 
 
