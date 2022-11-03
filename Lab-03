@@ -559,4 +559,26 @@ int main()
     return 0;
 }
 exercício 26
+#include<stdio.h>
+
+int main()
+{
+   float km,l,kml;
+    printf("Digite os kilometros percoridos:");
+    scanf("%f",&km);
+    printf("Digite os litros gastos:");
+    scanf("%f",&l);
+    kml=km/l;
+    if(kml<8)
+    printf("venda o carro");
+    if((kml>=8)&&(kml<=14))
+    printf("economico");
+    if(kml>14)
+    printf("super economico");
+    
+    
+    return 0;
+}
+exercício 27
+
 
