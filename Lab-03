@@ -783,5 +783,24 @@ int main()
     return 0;
 }
 exercício 33
+#include<stdio.h>
+
+int main()
+{
+    float pa,pn;
+    printf("Digite o preço antigo:");
+    scanf("%f",&pa);
+    if(pa<=50){
+    pn=pa*1.05;
+    printf("Com 5 porcento de aumento o preço será R$%f",pn);}
+    if((pa>50)&&(pa<=100)){
+    pn=pa*1.1;
+    printf("Com 10 porcento de aumento o preço será R$%f",pn);}
+    if(pa>100){
+    pn=pa*1.15;
+    printf("Com 15 porcento de aumento o preço será R$%f",pn);}
+    return 0;
+}
+exercício 34
 
 
