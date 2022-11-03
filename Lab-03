@@ -812,31 +812,36 @@ int main()
     scanf("%f",&nota);
     printf("Digite a quantidade de faltas:");
     scanf("%i",&falta);
-    if((nota>=9.0)&&(nota<=10.0)){
-    if(falta<=20)
-    printf("Conceito:A");
-    else
-    printf("Conceito:B");}
-    if((nota>=7.5)&&(nota<9.0)){
-    if(falta<=20)
-    printf("Conceito:B");
-    else
-    printf("Conceito:C");}
-    if((nota>=5)&&(nota<7.5)){
-    if(falta<=20)
-    printf("Conceito:C");
-    else
-    printf("Conceito:D");}
-    if((nota>=4)&&(nota<5)){
-    if(falta<=20)
-    printf("Conceito:D");
-    else
-    printf("Conceito:E");}
-    if((nota>=0)&&(nota<4)){
-    if(falta<=20)
-    printf("Conceito:E");
-    else
-    printf("Conceito:E");}
+    if((nota>=9.0)&&(nota<=10.0)) {
+        if(falta<=20)
+            printf("Conceito:A");
+        else
+            printf("Conceito:B");
+    }
+    if((nota>=7.5)&&(nota<9.0)) {
+        if(falta<=20)
+            printf("Conceito:B");
+        else
+            printf("Conceito:C");
+    }
+    if((nota>=5)&&(nota<7.5)) {
+        if(falta<=20)
+            printf("Conceito:C");
+        else
+            printf("Conceito:D");
+    }
+    if((nota>=4)&&(nota<5)) {
+        if(falta<=20)
+            printf("Conceito:D");
+        else
+            printf("Conceito:E");
+    }
+    if((nota>=0)&&(nota<4)) {
+        if(falta<=20)
+            printf("Conceito:E");
+        else
+            printf("Conceito:E");
+    }
     return 0;
 }
 exercício 35
