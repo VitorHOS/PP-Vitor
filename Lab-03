@@ -530,4 +530,33 @@ int main()
     return 0;
 }
 exercício 25
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    float delta,a,b,c,x,x1,x2;
+    printf("Digite os valores para\n");
+    printf("a:");
+    scanf("%f",&a);
+    printf("b:");
+    scanf("%f",&b);
+    printf("c:");
+    scanf("%f",&c);
+    delta=b*b-4*a*c;
+    if(a==0)
+    printf("não é equação do segu do grau");
+    else {
+    if(delta<0)
+    printf("não existe raiz.");
+    if(delta==0){
+    x=-b/(2*a);
+    printf("Raiz única %f",x);}
+    if(delta>0){
+    x1=(-b+sqrt(delta))/(2*a);
+    x2=(-b-sqrt(delta))/(2*a);
+    printf("as raízes são %f e %f",x1,x2);}}
+    return 0;
+}
+exercício 26
 
