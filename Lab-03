@@ -639,5 +639,50 @@ int main()
     return 0;
 }
 exercício 29
+#include<stdio.h>
+
+int main()
+{
+    int r1,r2,r3,r4,r5,acerto=0;
+    printf("Pergunta1: quanto é 57+59 ?");
+    scanf("%i",&r1);
+    printf("Pergunta2: quanto é 46+19 ?");
+    scanf("%i",&r2);
+    printf("Pergunta3: quanto é 92+8 ?");
+    scanf("%i",&r3);
+    printf("Pergunta4: quando é 35+35 ?");
+    scanf("%i",&r4);
+    printf("Pergunta5: quanto é 24+47 ?");
+    scanf("%i",&r5);
+    if(r1==116) {
+        acerto+=1;
+        printf("voce acertou a primeira pergunta-se.\n");
+    } else
+        printf("você errou a primeira pergunta, a resposta era 116.\n");
+    if(r2==65) {
+        acerto+=1;
+        printf("voce acertou a seguna pergunta.\n");
+    } else
+        printf("você errou a segunda pergunta, a resposta era 65.\n");
+    if(r3==100) {
+        acerto+=1;
+        printf("você acertou a terceira pergunta.\n");
+    } else
+        printf("você errou a terceira pergunta, a resposta era 100.\n");
+    if(r4==70) {
+        acerto+=1;
+        printf("voce acertou a quarta pergunta.\n");
+    } else
+        printf("você errou a quarta pergunta, a resposta era 70.\n");
+    if(r5==81) {
+        acerto+=1;
+        printf("voce acertou a quinta pergunta.\n");
+    } else
+        printf("você errou a quinta pergunta, a resposta era 81.\n");
+    printf("você acertou %i de 5.",acerto);
+
+    return 0;
+}
+exercício 30
 
 
