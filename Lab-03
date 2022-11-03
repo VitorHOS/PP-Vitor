@@ -740,5 +740,48 @@ int main()
     return 0;
 }
 exercício 32
+#include<stdio.h>
+
+int main()
+{
+    float valorP;
+    int codigo,q;
+    printf("Digite o código do produto:");
+    scanf("%i",&codigo);
+    printf("Digite a quantidade do produtos:");
+    scanf("%i",&q);
+    if(codigo==100) {
+        valorP=q*1.20;
+        printf("R$%f",valorP);
+    }
+    if(codigo==101) {
+        valorP=q*1.30;
+        printf("R$%f",valorP);
+    }
+    if(codigo==102) {
+        valorP=q*1.50;
+        printf("R$%f",valorP);
+    }
+    if(codigo==103) {
+        valorP=q*1.20,
+        printf("R$%f",valorP);
+    }
+    if(codigo==104) {
+        valorP=q*1.70;
+        printf("R$%f",valorP);
+    }
+    if(codigo==105) {
+        valorP=q*2.20;
+        printf("R$%f",valorP);
+    }
+    if(codigo==106) {
+        valorP=q*1.0;
+        printf("R$%f",valorP);
+    }
+
+
+    return 0;
+}
+exercício 33
 
 
