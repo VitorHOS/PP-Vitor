@@ -684,5 +684,31 @@ int main()
     return 0;
 }
 exercício 30
+#include<stdio.h>
+
+int main()
+{
+    float n1,n2,n3;
+    printf("Digite um numero:");
+    scanf("%f",&n1);
+    printf("Digite outro:");
+    scanf("%f",&n2);
+    printf("Digite outro:");
+    scanf("%f",&n3);
+    if((n1>n2)&&(n2>n3))
+        printf("%f %f %f",n1,n2,n3);
+    if((n1>n3)&&(n3>n2))
+        printf("%f %f %f",n1,n3,n2);
+    if((n2>n1)&&(n1>n3))
+        printf("%f %f %f",n2,n1,n3);
+    if((n2>n3)&&(n3>n1))
+        printf("%f %f %f",n2,n3,n1);
+    if((n3>n1)&&(n1>n2))
+        printf("%f %f %f",n3,n1,n2);
+    if((n3>n2)&&(n2>n1))
+        printf("%f %f %f",n3,n2,n1);
+    return 0;
+}
+exercício 31
 
 
