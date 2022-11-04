@@ -948,5 +948,64 @@ int main()
     return 0;
 }
 exercício 37
+#include<stdio.h>
+
+int main()
+{
+    int horaC,minutoC,horaS,minutoS,x,y,horaP,minutoP;
+    float tarifa;
+    printf("Digite\na hora da chegada:");
+    scanf("%i",&horaC);
+    printf("o minuto da chegada:");
+    scanf("%i",&minutoC);
+    printf("a hora da saida:");
+    scanf("%i",&horaS);
+    printf("o minuto da saida:");
+    scanf("%i",&minutoS);
+    if((horaC>23)||(horaS>23)||(minutoC>59)||(minutoS>59)) {
+        printf("horario invalida");
+    } else {
+        if(horaC>horaS) {
+            x=horaC-horaS;
+            horaP=24-x;
+            if(minutoC>minutoS) {
+                y=minutoC-minutoS;
+                minutoP=60-y;
+                horaP--;
+            }
+            if(minutoS>minutoC)
+                minutoP=minutoS-minutoC;
+            if(minutoP!=0)
+                horaP++;
+        }
+        if(horaS>horaC) {
+            horaP=horaS-horaC;
+            if(minutoC>minutoS) {
+                y=minutoC-minutoS;
+                minutoP=60-y;
+                horaP--;
+            }
+            if(minutoS>minutoC)
+                minutoP=minutoS-minutoC;
+            if(minutoP!=0)
+                horaP++;
+        }
+        if((horaP==1)||(horaP==2)) {
+            tarifa=horaP*1.0;
+            printf("sua tarifa será R$%f",tarifa);
+        }
+        if((horaP==3)||(horaP==4)) {
+            tarifa=horaP*1.40;
+            printf("sua tarifa será R$%f",tarifa);
+        }
+        if(horaP>=5) {
+            tarifa=horaP*2.0;
+            printf("sua tarifa será R$%f",tarifa);
+        }
+    }
+
+    return 0;
+}
+exercício 38
 
 
