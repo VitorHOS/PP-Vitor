@@ -846,10 +846,8 @@ int main()
 }
 exercício 35
 #include<stdio.h>
-
-int main()
-{
-    int dia,mes,ano,fev;
+int main() {
+    int dia,mes,ano,fev,x;
     printf("Digite um dia:");
     scanf("%i",&dia);
     printf("Digite o mês(1-jan,2-fev,...:");
@@ -858,58 +856,73 @@ int main()
     scanf("%i",&ano);
     if((ano%400==0)||(ano%4==0)&&(ano%100!=0))
         fev=29;
-    else
-        fev=28;
-    if(mes==1) {
-        if(dia<=31)
-            printf("data valida");
-    }
-    if(mes==2) {
-        if(dia<=fev)
-            printf("data valida");
-    }
-    if(mes==3) {
-        if(dia<=31)
-            printf("data valida");
-    }
-    if(mes==4) {
-        if(dia<=30)
-            printf("data valida");
-    }
-    if(mes==5) {
-        if(dia<=31)
-            printf("data valida");
-    }
-    if(mes==6) {
-        if(dia<=30)
-            printf("data valida");
-    }
-    if(mes==7) {
-        if(dia<=31)
-            printf("data valida");
-    }
-    if(mes==8) {
-        if(dia<=31)
-            printf("data valida");
-    }
-    if(mes==9) {
-        if(dia<=30)
-            printf("data valida");
-    }
-    if(mes==10) {
-        if(dia<=31)
-            printf("data valida");
-    }
-    if(mes==11) {
-        if(dia<=30)
-            printf("data valida");
-    }
-    if(mes==12) {
-        if(dia<=31)
-            printf("data valida");
-    }
-    else
+    else fev=28;
+    if(mes<13) {
+        if(mes==1) {
+            if(dia<=31)
+                printf("data valida");
+            x=1;
+        }
+        if(mes==2) {
+            if(dia<=fev)
+                printf("data valida");
+            x=1;
+        }
+        if(mes==3) {
+            if(dia<=31)
+                printf("data valida");
+            x=1;
+        }
+        if(mes==4) {
+            if(dia<=30)
+                printf("data valida");
+            x=1;
+        }
+        if(mes==5) {
+            if(dia<=31)
+                printf("data valida");
+            x=1;
+        }
+        if(mes==6) {
+            if(dia<=30)
+                printf("data valida");
+            x=1;
+        }
+        if(mes==7) {
+            if(dia<=31)
+                printf("data valida");
+            x=1;
+        }
+        if(mes==8) {
+            if(dia<=31)
+                printf("data valida");
+            x=1;
+        }
+        if(mes==9) {
+            if(dia<=30)
+                printf("data valida");
+            x=1;
+        }
+        if(mes==10) {
+            if(dia<=31)
+                printf("data valida");
+            x=1;
+        }
+        if(mes==11) {
+            if(dia<=30)
+                printf("data valida");
+            x=1;
+        }
+        if(mes==12) {
+            if(dia<=31)
+                printf("data valida");
+            x=1;
+        }
+        else
+            printf("data invalida.");
+    } else {
         printf("data invalida");
+    }
     return 0;
 }
 exercício 36
