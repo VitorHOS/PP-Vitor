@@ -1,0 +1,144 @@
+Exercício 1
+#include<stdio.h> 
+
+int main()
+{
+    int x=3;
+    while(x<12){
+    printf("%i\n",x);
+    x=x+3;}
+    return 0;
+}
+Exercício 2
+#include<stdio.h> 
+
+int main()
+{
+    int x,y=1,z=1;
+    printf("FOR:");
+    for(x=1;x<=100;x++)
+    printf("%i ",x);
+    printf("\nWHILE:");
+    while(y<=100){
+    printf("%i ",y);
+    y++;}
+    printf("\nDO-WHILE:");
+    do{
+    printf("%i ",z);
+    z++;
+    }while(z<=100);
+    return 0;
+}
+Exercício 3
+#include<stdio.h> 
+
+int main()
+{
+    int x=10;
+    while(x>=0) {
+        printf("%i\n",x);
+        x--;
+    }
+   printf("Fim");
+    return 0;
+}
+Exercício 4
+#include<stdio.h> 
+
+int main()
+{
+    int x=0;
+    while(x<=100000) {
+        printf("%i\n",x);
+        x+=1000;
+    }
+    return 0;
+}
+Exercício 5
+#include<stdio.h> 
+
+int main()
+{
+    int x=0,soma=0,res=0;
+    while(x<10) {
+        printf("Digite um numero:");
+        scanf("%i",&soma);
+        res+=soma;
+        x++;
+    }
+    printf("a soma dos 10 numeros são %i",res);
+    return 0;
+}
+Exercício 6
+#include<stdio.h> 
+
+int main()
+{
+        int x=0,soma=0,res=0,media;
+        while(x<10) {
+                printf("Digite um numero:");
+                scanf("%i",&soma);
+                res+=soma;
+                x++;       
+    }
+    media=res/10;
+        printf("a soma dos 10 numeros são %i",media);
+        return 0;
+}
+Exercício 7
+#include<stdio.h> 
+
+int main()
+{
+        int x=0,n1=0,res=0,media;
+        while(x<10) {
+        printf("Digite um numero:");
+        scanf("%i",&n1);
+        if(n1>0) {
+            res+=n1;
+            x++; } }
+        media=res/10;
+        printf("a soma dos 10 numeros são %i",media);
+        return 0;
+}
+Exercício 8 
+
+Exercício 9
+#include<stdio.h> 
+
+int main()
+{
+    int x=0,n,ni=1;
+    printf("Digite um numero:");
+    scanf("%i",&n);
+    for(x=0; x<=n; x++){
+    printf("%i ",ni);
+    ni+=2;}
+    return 0;
+}
+Exercício 10
+#include<stdio.h> 
+
+int main()
+{
+    int x,n=50,np=0,soma=0;
+    for(x=0; x<=n; x++){
+    soma+=np;
+    np+=2;}
+    printf("%i",soma);
+    return 0;
+}
+Exercício 11
+#include<stdio.h> 
+
+int main()
+{
+    int x,n;
+    do{
+    printf("Digite um numero:");
+    scanf("%i",&n);
+    }while(n<0);
+    for(x=0; x<=n; x++)
+    printf("%i\n",x);
+    return 0;
+}
