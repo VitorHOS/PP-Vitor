@@ -140,3 +140,163 @@ int main()
     printf("%i\n",x);
     return 0;
 }
+exercicio 12
+#include <stdio.h>
+
+int main()
+{
+    int n,soma=0,x,y=1,re;
+    printf("digite um numero:");
+    scanf("%i",&n);
+    for(x=0; x<n-1; x++){
+        re=n%y;
+        if(re==0)
+        soma+=y;
+        y++;
+    }
+  printf("%i",soma);
+
+    return 0;
+}
+exercicio13
+#include <stdio.h>
+
+int main()
+{
+    int n,soma=0,x,y=1000,re3,re5;
+
+    for(x=0; x<=1000; x++){
+        re3=y%3;
+        re5=y%5;
+        if((re3==0)||(re5==0))
+        soma+=re3;
+        y--;
+
+    }
+  printf("%i",soma);
+
+    return 0;
+}
+
+exercicio14
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n,d1,d2,x;
+    printf("digite a quantidade de dados:");
+    scanf("%i",&n);
+    for(x=0; x<n; x++){
+     d1= rand () % 6;
+     d2= rand () % 6;
+     printf("dado 1: %i\n",d1);
+     printf("dado 2: %i\n",d2);
+     if(d1==d2)
+      printf("sao iguais.\n");
+     if(d1>d2)
+     printf("o primeiro dado e maior.\n");
+     if(d2>d1)
+     printf("o segundo dado dado e maior.\n");
+
+}
+    return 0;
+}
+exercicio 15
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int x,n,qua,cubo,raiz;
+
+    do{
+     printf("digite um numero:");
+     scanf("%i",&n);
+    if(n>0){
+    qua=n*n;
+    cubo=n*n*n;
+    raiz=sqrt(n);
+    printf("o quadrado de %i e %i.\n",n,qua);
+    printf("o cubo de %i e %i.\n",n,cubo);
+    printf("a raiz quadrada de %i e %i\n",n,raiz);
+    }
+    }while(n>0);{
+}
+
+     printf("fim");
+    return 0;
+}
+exercicio 16
+CALCULADORA COM SAIDA
+
+exercicio 17
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float c=1.5,z=1.1;
+    int a;
+    while(c>z){
+        c+=0.02;
+        z+=0.03;
+        a++;
+    }
+    printf("ira demorar %i anos.\n",a);
+    return 0;
+}
+exercicio 18
+TESTE TESTE TESTE TESTE
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float s=2000,au=1.5;
+    int a,atual=2022;
+    s*=au;
+    for(a=1997; a<=atual; a++){
+     s*=au;
+     au*=2;
+    }
+    printf("em 2020 o salario sera &f",s);
+    return 0;
+}
+
+exercicio 20
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float soma=0;
+    int x;
+    for(x=0; x<=2000000; x++){
+        soma+=x;
+    }
+    printf("%f",soma);
+
+
+    return 0;
+}
+exercicio 21
+include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b,
+    printf("digite a:");
+    scanf("%i",&a);
+    printf("digite b:");
+    scanf("%i",&b);
+    
+    
+    
+    TERMINE
+
+
+    return 0;
+}
+
