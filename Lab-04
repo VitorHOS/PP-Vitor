@@ -247,22 +247,7 @@ int main()
     return 0;
 }
 exercicio 18
-TESTE TESTE TESTE TESTE
-#include <stdio.h>
-#include <stdlib.h>
 
-int main()
-{
-    float s=2000,au=1.5;
-    int a,atual=2022;
-    s*=au;
-    for(a=1997; a<=atual; a++){
-     s*=au;
-     au*=2;
-    }
-    printf("em 2020 o salario sera &f",s);
-    return 0;
-}
 
 exercicio 20
 #include <stdio.h>
