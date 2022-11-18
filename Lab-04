@@ -169,7 +169,7 @@ int main()
         re3=y%3;
         re5=y%5;
         if((re3==0)||(re5==0))
-        soma+=re3;
+        soma+=x;
         y--;
 
     }
@@ -247,7 +247,20 @@ int main()
     return 0;
 }
 exercicio 18
+#include <stdio.h>
+#include <stdlib.h> 
 
+int main()
+{
+    float s=3000,au=2000;
+    int a,atual=2022;
+    for(a=1997; a<=atual; a++){
+     s+=au;
+     au*=2;
+    }
+    printf("em 2020 o salario sera %f",s);
+    return 0;
+}
 
 exercicio 20
 #include <stdio.h>
