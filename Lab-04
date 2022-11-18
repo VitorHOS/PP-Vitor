@@ -228,7 +228,7 @@ int main()
     return 0;
 }
 exercicio 16
-CALCULADORA COM SAIDA
+
 
 exercicio 17
 #include <stdio.h>
@@ -261,25 +261,6 @@ int main()
         soma+=x;
     }
     printf("%f",soma);
-
-
-    return 0;
-}
-exercicio 21
-include <stdio.h>
-#include <stdlib.h>
-
-int main()
-{
-    int a,b,
-    printf("digite a:");
-    scanf("%i",&a);
-    printf("digite b:");
-    scanf("%i",&b);
-    
-    
-    
-    TERMINE
 
 
     return 0;
