@@ -22,3 +22,30 @@ int numero(int num1)
         return -1;
 }
 exercicio 4
+#include <stdio.h>
+int quadradoP(int num1);
+
+int main()
+{
+    int num,x;
+    printf("digite um numero:");
+    scanf("%i",&num);
+    x = quadradoP(num);
+    if(x==1)
+    printf("e um quadrado perfeito");
+    else
+        printf("nao e um quadrado perfeito");
+    return 0;
+}
+int quadradoP(int num1)
+{
+  int b;
+  float a;
+  a = sqrt(num1);
+  b = a*a;
+  if(b==num1)
+    return 1;
+  else
+    return 0;
+}
+exercicio 5
