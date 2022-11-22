@@ -131,5 +131,25 @@ float hipotenusa(float a, float b)
     return sqrt(a*a+b*b);
 } 
 exercicio 9
+#include <stdio.h>
+#define PI 3.1415
+float volumecilindro(float r, float a);
+
+int main()
+{
+    float raio,altura,V;
+    printf("digite o raio:");
+    scanf("%f",&raio);
+    printf("digite a altura:");
+    scanf("%f",&altura);
+    V = volumecilindro(raio,altura);
+    printf("o volume e %f",V);
+    return 0;
+}
+float volumecilindro(float r, float a)
+{
+    return PI*(r*r)*a;
+}
+exercicio 10
 
 
