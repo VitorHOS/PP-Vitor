@@ -151,5 +151,27 @@ float volumecilindro(float r, float a)
     return PI*(r*r)*a;
 }
 exercicio 10
+#include <stdio.h>
+float maior(float a, float b);
+
+int main()
+{
+    float x,y,M;
+    printf("digite um numero:");
+    scanf("%f",&x);
+    printf("digite um numero:");
+    scanf("%f",&y);
+    M = maior(x,y);
+    printf("%f e maior",M);
+    return 0;
+}
+float maior(float a, float b)
+{
+    if(a>b)
+        return a;
+    if(b>a)
+        return b;
+}
+exerciico 11
 
 
