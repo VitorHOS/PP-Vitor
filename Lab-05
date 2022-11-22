@@ -112,5 +112,24 @@ float celfah(float C)
     return F;
 }
 exercicio 8
+#include <stdio.h>
+float hipotenusa(float a, float b);
+
+int main()
+{
+    float ca,cb,h;
+    printf("digite o primeiro cateto:");
+    scanf("%f",&ca);
+    printf("digite o segundo cateto:");
+    scanf("%f",&cb);
+    h = hipotenusa(ca,cb);
+    printf("a hipotenusa e %f",h);
+    return 0;
+}
+float hipotenusa(float a, float b)
+{
+    return sqrt(a*a+b*b);
+} 
+exercicio 9
 
 
