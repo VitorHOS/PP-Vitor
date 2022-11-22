@@ -93,5 +93,24 @@ int tempo(int h,int m)
     return h+m;
 }
 exercicio 7
+#include <stdio.h>
+float celfah(float C);
+
+int main()
+{
+    float c,f;
+    printf("digite uma temperatura em celcius:");
+    scanf("%f",&c);
+    f = celfah(c);
+    printf("%f celcius em fahrenheit e %f",c,f);
+    return 0;
+}
+float celfah(float C)
+{
+    float F;
+    F = C*1.8+32;
+    return F;
+}
+exercicio 8
 
 
