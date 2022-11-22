@@ -49,3 +49,25 @@ int quadradoP(int num1)
     return 0;
 }
 exercicio 5
+#include <stdio.h>
+#define PI 3.1415
+float volume(float r);
+
+int main()
+{
+    float raio,v;
+    printf("digite o raio:");
+    scanf("%f",&raio);
+    v = volume(raio);
+    printf("o volume e %f",v);
+    return 0;
+}
+float volume(float r)
+{
+ float vo;
+ vo = (4*PI*(r*r*r))/3;
+ return vo;
+}
+exercicio 6
+
+
