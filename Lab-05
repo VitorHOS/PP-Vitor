@@ -1,5 +1,21 @@
+Exercício 1
+#include<stdio.h>
+int dobro (int a) {
+    return 2*a;
+}
+int main()
+{
+    int n,d;
+    printf("digite um numero:");
+    scanf("%i",&n);
+    d= dobro(n);
+    printf("o dobro de %i e %i",n,d);
+    return 0;
+}
+Exercício 2
 
-exerci  3
+
+exercicio  3
 #include <stdio.h>
 int numero(int num1);
 
