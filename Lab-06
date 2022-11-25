@@ -1,0 +1,92 @@
+exercicio 1
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int A[6] = {1,0,5,-2,-5,7},soma = 0,i;
+    soma = A[0]+A[1]+A[5];
+    printf("soma:%i\n",soma);
+    A[4] = 100;
+    for(i=0; i<7; i++){
+        printf("%i\n",A[i]);
+    }
+    return 0;
+}
+exercicio 2
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int A[8],x,y,i,soma=0;
+    for(i=0; i<8; i++){
+        printf("digite um numero:");
+        scanf("%i",&A[i]);
+}
+printf("digite valores para x e y:");
+scanf("%i %i",&x,&y);
+soma = A[x]+A[y];
+printf("a soma e %i",soma);
+    return 0;
+}
+exercicio 3
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int A[6],i,x;
+    for(i=0; i<6; i++){
+        printf("digite um numero:");
+        scanf("%i",&A[i]);
+    }
+    for(x=6; x>0; x--)
+        printf("%i\n",A[i]);
+    return 0;
+}
+exercicio 4
+
+
+exercicio 5
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int A[50],i;
+    for(i=0; i<50; i++){
+        A[i] = (i+5*i)%(i+1);
+        printf("%i,",A[i]);
+    }
+    return 0;
+}
+exercicio 6
+use ehprimo
+
+exercicio 7
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int A[6],i,x,soma=0,resto,y=0;
+    for(i=0; i<6; i++){
+        printf("digite um numero:");
+        scanf("%i",&A[i]);}
+        for(x=0; x<6; x++){
+        resto=A[x]%2;
+   if(resto==0){
+    printf("%i e par.\n",A[x]);
+    soma +=A[x];
+}
+        }
+   printf("a soma dos numeros pares e:%i\n",soma);
+for(x=0; x<6; x++){
+        resto=A[x]%2;
+   if(resto!=0){
+    printf("%i e impar.\n",A[x]);
+    y++;
+   }
+}
+printf("%i numeros impares digitados.",y);
+    return 0;
+}
+ARRUMAR
+exercicio 8
