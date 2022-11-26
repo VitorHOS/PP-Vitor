@@ -269,7 +269,6 @@ int somaAlga(int x);
 int main()
 {
     int n,a;
-    char tipo;
     printf("digite um numero:");
     scanf("%i",&n);
     if(n<0)
