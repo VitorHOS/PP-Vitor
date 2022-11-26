@@ -263,5 +263,28 @@ float mediaP(float n1,float n2,float n3) {
     return ((n1*5)+(n2*3)+(n3*2))/10;
 }
 exercício 12
+#include<stdio.h>
+int somaAlga(int x);
+
+int main()
+{
+    int n,a;
+    char tipo;
+    printf("digite um numero:");
+    scanf("%i",&n);
+    a= somaAlga(n);
+    printf("%i\n",a);
+    return 0;
+}
+int somaAlga(int x) {
+    int resto,soma=0;
+    while(x>0) {
+        resto = x % 10;
+        x/=10;
+        soma+=resto;
+    }
+    return soma;
+}
+exercício 13
 
 
