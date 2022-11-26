@@ -272,8 +272,12 @@ int main()
     char tipo;
     printf("digite um numero:");
     scanf("%i",&n);
+    if(n<0)
+        printf("numero invalido.");
+    else {
     a= somaAlga(n);
     printf("%i\n",a);
+}
     return 0;
 }
 int somaAlga(int x) {
