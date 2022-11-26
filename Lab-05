@@ -230,5 +230,38 @@ float maior(float a, float b)
         return b;
 }
 exerciico 11
+#include<stdio.h>
+float mediaA(float n1,float n2,float n3);
+float mediaP(float n1,float n2,float n3);
+
+int main()
+{
+    float nota1,nota2,nota3,media;
+    char tipo;
+    printf("digite a primeira nota:");
+    scanf("%f",&nota1);
+    printf("digite a segunda nota:");
+    scanf("%f",&nota2);
+    printf("digite a terceira nota:");
+    scanf("%f",&nota3);
+    printf("digite o tipo de media\nA para aritmética e P para ponderada:");
+    scanf(" %c",&tipo);
+    if((tipo=='A')||(tipo=='a')) {
+        media = mediaA(nota1,nota2,nota3);
+        printf("a media aritmética e %f",media);
+    }
+    if((tipo=='P')||(tipo=='p')) {
+        media = mediaP(nota1,nota2,nota3);
+        printf("a media ponderada e %f",media);
+    }
+    return 0;
+}
+float mediaA(float n1,float n2,float n3) {
+    return (n1+n2+n3)/3;
+}
+float mediaP(float n1,float n2,float n3) {
+    return ((n1*5)+(n2*3)+(n3*2))/10;
+}
+exercício 12
 
 
