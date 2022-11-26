@@ -13,8 +13,49 @@ int main()
     return 0;
 }
 Exercício 2
+#include<stdio.h>
+int data(int d,int m,int a);
 
+int main()
+{
+    int dia,mes,ano,x;
+    printf("Digite uma data.\n");
+    printf("Dia:");
+    scanf("%i",&dia);
+    printf("Mes:");
+    scanf("%i",&mes);
+    printf("ano:");
+    scanf("%i",&ano);
+    x = data(dia,mes,ano);
+    return 0;
+}
+int data(int d,int m,int a) {
 
+    if(m==1)
+        return printf("%i de Janeiro de %i",d,a);
+    if(m==2)
+        return printf("%i de Fevereiro de %i",d,a);
+    if(m==3)
+        return printf("%i de Março de %i",d,a);
+    if(m==4)
+        return printf("%i de Abril de %i",d,a);
+    if(m==5)
+        return printf("%i de Maio de %i",d,a);
+    if(m==6)
+        return printf("%i de Junho de %i",d,a);
+    if(m==7)
+        return printf("%i de Julho de %i",d,a);
+    if(m==8)
+        return printf("%i de Agosto de %i",d,a);
+    if(m==9)
+        return printf("%i de Setembro de %i",d,a);
+    if(m==10)
+        return printf("%i de Outubro de %i",d,a);
+    if(m==11)
+        return printf("%i de Novembro de %i",d,a);
+    if(m==12)
+        return printf("%i de Dezembro de %i",d,a);
+}
 exercicio  3
 #include <stdio.h>
 int numero(int num1);
