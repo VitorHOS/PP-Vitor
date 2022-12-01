@@ -132,3 +132,26 @@ int main()
     return 0;
 }
 exercicio 2
+#include <stdio.h>
+
+int main()
+{
+    int num[5][5];
+    int i,j,k,x,y;
+    for(i=0; i<5; i++){
+        num[0][i] = 1;
+    }
+    for(j=1; j<5; j++){
+        for(k=0; k<5; k++)
+            num[j][k] = 0;
+    }
+    for(x=0; x<5; x++){
+        for(y=0; y<5; y++){
+        printf("%i ",num[x][y]);
+        if(y==4)
+        printf("\n");
+    }
+    }
+    return 0;
+}
+exercicio 3
