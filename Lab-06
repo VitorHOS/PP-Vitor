@@ -113,3 +113,22 @@ int main()
 }
 MATRIZES
 exercicio 1
+#include <stdio.h>
+
+int main()
+{
+    int num[4][4];
+    int i,j,x;
+    for(i=0; i<4; i++){
+            for(j=0; j<4; j++){
+        printf("digite um numero:");
+        scanf("%i",&num[i][j]);
+            if(num[i][j]>10)
+                x++;
+            }
+    }
+        printf("%i",x);
+
+    return 0;
+}
+exercicio 2
