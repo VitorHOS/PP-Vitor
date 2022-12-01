@@ -218,3 +218,25 @@ int main()
     return 0;
 }
 exercicio 7
+#include <stdio.h>
+
+int main()
+{
+    int num[5][5];
+    int i,j,x,y;
+    srand( (unsigned)time(NULL) );
+    for(i=0; i<5; i++){
+        for(j=0; j<5; j++){
+            num[i][j] = rand() % 100;
+            for(x=0; x<i; x++){
+                  for(y=0; y<=j; y++){
+                    if(num[i][j]==num[x][y]){
+                    num[x][j] = rand() % 100;
+                    } } }
+                    printf("%i ",num[i][j]);
+                     if(j==4)
+                      printf("\n");
+                      } }
+    return 0;
+}
+exercicio 8
