@@ -155,6 +155,7 @@ int main()
     return 0;
 }
 exercicio 3
+
 exercicio 4
 #include <stdio.h>
 
@@ -237,39 +238,5 @@ int main()
                      if(j==4)
                       printf("\n");
                       } }
-    return 0;
-}
-exercicio 8
-#include <stdio.h>
-int somar();
-int subtrair();
-int adicionarconstante();
-int imprimir();
-
-int main()
-{
-    float m1[2][2],m2[2][2];
-    int i,j,x,y;
-    for(i=0; i<5; i++){
-        for(j=0; j<5; j++){
-            printf("digite um numero para a matriz 1:");
-            scanf("%f",&m1[i][j]);
-        }
-    }
-    for(i=0; i<5; i++){
-        for(j=0; j<5; j++){
-            printf("digite um numero para a matriz 2:");
-            scanf("%f",&m2[i][j]);
-        }
-    }
-    do{
-        printf("(1) somar as matrizes.");
-        printf("(2) subtrair a primeira matriz da segunda.");
-        printf("(3) adicionar uma constante às duas matrizes.");
-        printf("(4) imprimir as matrizes.");
-        printf("digite o numero da opcao:");
-        scanf("%i",&x);
-    }while((x<1)||(x>4));
-    
     return 0;
 }
