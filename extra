@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char str[100];
+    int i,j,x=0,y;
+    printf("digite a frase a ser convertida:");
+    fgets(str, 100, stdin);
+    for(i=0; i<100; i++){
+            x++;
+
+     if((str[x]==' ')||(str[x]=='\0')||(str[x]=='\n')||(str[x]==',')){
+        i++;
+        x++;}
+        if((str[i]=='r')&&(str[x]=='r')){
+            str[i]='l';
+            y=x;
+            for(j=y+1; j<100; j++){
+            str[y]=str[j];
+            y++;}
+        }
+        if(str[i]=='r')
+            str[i]='l';
+    }
+
+printf("frase convertida:%s",str);
+
+    return 0;
+}
