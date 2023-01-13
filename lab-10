@@ -1,0 +1,111 @@
+exercicio 2
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int *p;
+    int x,i;
+    printf("digite o tamanho do vetor:");
+    scanf("%d",&x);
+    p = (int *) malloc(x*sizeof(int));
+    if(p == NULL){
+        printf("memoria insuficiente.");
+    }
+    for(i = 0; i < x; i++){
+        printf("digite um valor par a posicao %d:",i);
+        scanf("%d",&p[i]);
+    }
+    for(i = 0; i < x; i++)
+        printf("%d\n",p[i]);
+    free(p);
+    return 0;
+}
+exercicio 4
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char *p;
+    int x;
+    printf("digite o tamanho da string:");
+    scanf("%d",&x);
+    x++;
+    setbuf(stdin,NULL);
+    p = (char *) malloc(x);
+    if(p == NULL)
+        printf("memoria insuficiente.");
+    printf("digite a string:");
+    fgets(p,x,stdin);
+    printf("%s",p);
+    free(p);
+    return 0;
+}
+exercicio 6
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int *p;
+    int x,y,z;
+    printf("digite o tamanho da memoria:");
+    scanf("%d",&x);
+    p = (int *) calloc(x,sizeof(int));
+    if(p == NULL)
+        printf("memoria insuficiente.");
+    do{
+    do{
+        printf("opcoes:\n");
+        printf("(1)inserir valor.\n");
+        printf("(2)consultar valor.\n");
+        printf("(3)sair.\n");
+        printf("digite a opcao:");
+        scanf("%d",&y);
+    }while((y < 1)||(y > 3));
+    if(y == 1){
+        printf("em qual posicao voce deseja inserir um valor:");
+        scanf("%d",&z);
+        printf("qual valor:");
+        scanf("%d",&p[z]);
+    }
+    if(y == 2){
+        printf("em qual posicao voce deseja ver um valor:");
+        scanf("%d",&z);
+        printf("%d\n",p[z]);
+    }
+    if(y == 3)
+        return 0;
+    }while(y != 3);
+    free(p);
+    return 0;
+}
+exercicio 8
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int *p;
+    int i,x = 0;
+    p = (int *) calloc(1500,sizeof(int));
+    if(p == NULL)
+        printf("memoria insuficiente.");
+    for(i = 0; i < 1500; i++){
+        if(p[i] == 0)
+            x++;
+    }
+    printf(" quantidade der vetores com 0:%d\n",x);
+    for(i = 0; i < 1500; i++){
+        p[i] = i;
+    }
+    printf("10 primeiros:\n");
+    for(i = 0; i < 10; i++)
+        printf("%d\n",p[i]);
+    printf("10 ultimos:\n");
+    for(i = 1490; i < 1500; i++)
+        printf("%d\n",p[i]);
+    free(p);
+    return 0;
+} exercicio 10
